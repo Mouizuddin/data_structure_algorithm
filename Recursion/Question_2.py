@@ -8,5 +8,8 @@ def power(base,expo):
     assert expo >= 0 and type(expo) == int,'ERROR'
     return base * power(base,expo-1)
 
+def name():
+    return "MOHAMMED MOUIZUDDIN"
+
 print(power(16,2))
 print(75%  2)
