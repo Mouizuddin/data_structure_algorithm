@@ -39,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Python.selection_sort (1)">
+  <component name="RunManager" selected="Python.Queue">
     <configuration name="Queue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,8 +147,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.selection_sort (1)" />
         <item itemvalue="Python.Queue" />
+        <item itemvalue="Python.selection_sort (1)" />
         <item itemvalue="Python.selection_sort" />
         <item itemvalue="Python.stack" />
         <item itemvalue="Python.__init__" />
