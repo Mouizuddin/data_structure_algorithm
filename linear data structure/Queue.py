@@ -10,8 +10,9 @@
 '''
 print('=========== Queue implementation using list ===========\n')
 queue = []
+
 def to_add(): # main
-    element = input('Add element')
+    element = int(input('Add element'))
     queue.append(element)
     print(f'{queue}')
 
@@ -31,6 +32,16 @@ def top_element():
 def base_element():
     print(queue[-1])
 
+def selction_sort():
+    count = 0
+    for i in range(len(queue) - 1):
+        count += 1
+        min_val = min(queue[i:])  # min value
+        index_of_min_val = queue.index(min_val, i)  # this will give the index of min_val
+        # print(min_val)
+        # print(index_of_min_val)
+        queue[i], queue[index_of_min_val] = queue[index_of_min_val], queue[i]
+        print(f'iteration number -> {count} and sorted array made is > {queue}')
 
 def queue_implementation():
 
@@ -39,6 +50,7 @@ def queue_implementation():
                            '2 - to remove , '
                            '3 - for the top element , '
                            '4 - for base element'
+                           '5 - to sort the Queue'
                            '0 - to quit'))
         ''''
         if 1,2,3,4,0  100 > else False
@@ -69,6 +81,8 @@ def queue_implementation():
                     print(f'{queue} should have atleast 2 elements to print base')
             except IndexError as index:
                 print(f'Error is {index}')
+        elif choose == 5:
+            selction_sort()
         elif choose == 0:
             print(f'Final queue is {queue}')
             break
@@ -77,5 +91,3 @@ def queue_implementation():
 queue_implementation()
 
 # not handled ValueError in this implementation
-
-
