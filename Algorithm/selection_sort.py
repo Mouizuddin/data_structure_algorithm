@@ -30,3 +30,5 @@ def selection_sort_2(array):
     print(f'Final without (min) array {array}')
 
 selection_sort_2(array)
+# 5,000
+# 50,00 0
