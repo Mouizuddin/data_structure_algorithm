@@ -1,4 +1,4 @@
-'''
+''' Selection sort
  selection sort is an in-place comparison sorting algorithm.
  It has an O(n2) time complexity
 '''
@@ -30,5 +30,3 @@ def selection_sort_2(array):
     print(f'Final without (min) array {array}')
 
 selection_sort_2(array)
-# 5,000
-# 50,00 0

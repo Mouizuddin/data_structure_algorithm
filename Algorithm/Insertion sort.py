@@ -1,4 +1,4 @@
-''' sort
+'''Insertion sort
 It can also be useful when input array is almost sorted,only few elements are misplaced in complete big array.
 The average, best-case, and worst-case time complexity of Selection Sort is: O(n2)
 '''
