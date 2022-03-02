@@ -27,7 +27,6 @@ def binary_search(array,key):
     else:
         print(f'Key not found')
 
-
 if __name__ == '__main__':
     array = [132, 43, 65, 68, 89, 24, 13, 6]
     array.sort()
