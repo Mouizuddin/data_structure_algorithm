@@ -4,7 +4,6 @@
 3) LIFO (Last-In-First-Out) principle
 4) insertion and deletion of item always take place at same end
 '''
-
 print('=========== Stack implementation using list ===========\n')
 stack = []
 def to_add(): # main
