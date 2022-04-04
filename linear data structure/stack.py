@@ -62,10 +62,6 @@ def stack_implementation():
             print(f'Final stack is {stack}')
             break
 
-
-
-stack_implementation()
-
-# not handled ValueError in this implementation
-# https://www.javatpoint.com/data-structure-stack
+if __name__ == '__main__':
+    stack_implementation()
 
