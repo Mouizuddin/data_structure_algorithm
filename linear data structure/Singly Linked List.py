@@ -1,4 +1,4 @@
-'''Singly Linked List
+''' Singly Linked List
 head -> have the reference of the first node
 tail -> last node
 node - > data | adress
@@ -12,10 +12,12 @@ Functions :
     - when linked list is empty
 
 2) to delet
+    - the begning node
+    - the last node
+    - any node
 
 3) print linked list
 '''
-
 class Node:
     def __init__(self,data):
         self.data = data
@@ -27,7 +29,7 @@ class SinglyLinkedList:
 
     def print_linked_list(self):
          if self.head == None:
-             print('Linked List is empty')
+             print("Singly Linked List is empty")
          else:
              while self.head is not None:
                  print(self.head.data)
@@ -107,43 +109,41 @@ class SinglyLinkedList:
         else:
             print("Singly Linked List is not empty")
 
-    def del_begin(self):
+    def del_begin(self): #  delet the begning node
         if self.head == None:
             print("Empty Linked List canot perform deletion opreation")
         else:
             self.head = self.head.link_to_next
 
-    def add_bulk_data(self):
-        data = 'a b c d e f'.split()
-        for i in data:
-            self.add_in_begin(i)
+    # def add_bulk_data(self):
+    #     data = 'a b c d e f'.split()
+    #     for i in data:
+    #         self.add_in_begin(i)
 
-    def del_last_node(self):
+    def del_last_node(self): #  delet the last node
         if self.head is None:
-            print(False)
+            print("Singly Linked List is empty")
         else:
             n = self.head
             while n.link_to_next.link_to_next is not None:
                 n = n.link_to_next
             n.link_to_next = None
 
-    def del_at_any_pos(self,x):
+    def any_node(self,x): # #  delet any node (by user value)
         if self.head is None:
-            print("Tree is empyt")
+            print("Singly Linked List is empty")
         else:
-            if x == self.head.data:
-                self.del_begin()
-            else:
-                n = self.head
-                while n.link_to_next is not None:
-                    if x == n.data:
-                        break
-                n = n.link_to_next
-                if n.link_to_next is None:
-                    print(False)
-                else:
-                    n.link_to_next = n.link_to_next.link_to_next
-
+            if x == self.head:
+                self.head = self.head.link_to_next
+        n = self.head
+        while n is not None:
+            if x == n.link_to_next.data:
+                break
+            n = n.link_to_next
+        if n is None:
+            print(f"{x} element not found")
+        else:
+            n.link_to_next = n.link_to_next.link_to_next
 
 
 if __name__ == '__main__':
@@ -155,4 +155,5 @@ if __name__ == '__main__':
     sll.add_in_begin(100)
     sll.add_after_node(1078,10)
     sll.add_in_end(1001)
+    sll.any_node(1001)
     sll.travel()
