@@ -14,3 +14,4 @@ def linear_search(array,key):
     else:
         print('Key not found')
 linear_search([12,32,4,54,5,0],0)
+#

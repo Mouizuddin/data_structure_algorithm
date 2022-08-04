@@ -19,4 +19,9 @@ def factorial(num):
         return  1
     return num * factorial(num-1)
 
-print(factorial(3))
+# print(factorial(3))
+def pan(name):
+    if name[:] == name[::-1]:
+        print('its palimdrome')
+    print('its not a palimdrome')
+
